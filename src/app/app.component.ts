@@ -3,6 +3,7 @@ import {HeaderComponent} from './header.component';
 import {UserComponent} from './user.component';
 import {DUMMY_USERS} from './dummy-users';
 import {TasksComponent} from './tasks.component';
+import {FormsModule} from '@angular/forms';
 // import { NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -12,6 +13,7 @@ import {TasksComponent} from './tasks.component';
     HeaderComponent,
     UserComponent,
     TasksComponent,
+      FormsModule
     // NgFor,
     // NgIf
   ],
