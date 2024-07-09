@@ -1,14 +1,9 @@
-import {Component, computed, Input, Output, input, EventEmitter, output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import { User } from './user.model';
-import {CardComponent} from './card.component';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
   templateUrl: './user.component.html',
-  imports: [
-    CardComponent
-  ],
   styleUrl: './user.component.css'
 })
 

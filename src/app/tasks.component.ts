@@ -1,18 +1,8 @@
 import {Component, EventEmitter, Injectable, Input, Output} from '@angular/core';
-import {TaskComponent} from './task.component';
-import {dummyTasks} from './dummy-tasks';
-import {NewTaskComponentComponent} from './new-task-component.component';
-import {FormsModule} from '@angular/forms';
 import {TasksService} from './services/tasks.service';
 
 @Component({
   selector: 'app-tasks',
-  standalone: true,
-  imports: [
-    TaskComponent,
-      NewTaskComponentComponent,
-      FormsModule,
-  ],
     providers:[
       TasksService
     ],
@@ -37,9 +27,8 @@ export class TasksComponent {
   onStartAddTask(){
     this.isAddingTask = true;
   }
-
-    onCloseAddTask(){
-      this.isAddingTask = false;
+  onCloseAddTask(){
+    this.isAddingTask = false;
   }
 
 }

@@ -1,22 +1,10 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from './header.component';
-import {UserComponent} from './user.component';
 import {DUMMY_USERS} from './dummy-users';
-import {TasksComponent} from './tasks.component';
-import {FormsModule} from '@angular/forms';
 // import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    HeaderComponent,
-    UserComponent,
-    TasksComponent,
-      FormsModule
-    // NgFor,
-    // NgIf
-  ],
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
